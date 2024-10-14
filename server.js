@@ -10,7 +10,7 @@ app.use(
   session({ secret: "your-secret", resave: false, saveUninitialized: true })
 );
 
-mongoose.connect("mongodb://localhost:27017/hello");
+mongoose.connect("mongodb://localhost:27017/welcome");
 
 // Middleware to check the number of active sessions
 const checkSessionLimit = (req, res, next) => {
